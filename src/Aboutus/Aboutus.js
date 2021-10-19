@@ -7,10 +7,10 @@ const Aboutus = () => {
             <p>Bdcare is the first and largest innovative online healthcare startup, built with a mission to create a “one-stop” healthcare platform for Doctors & Users. Bdcare is created with a vision to provide easy access for mass people to the healthcare system. We are technologically driven with all medical needs.</p>
 
             <h2>We provide :</h2>
-            <p>Doctors’ database: Authentic details of the doctors’ are maintained in Bdcare’s database which lead to users’ trust.
+            <p>Doctors’ database: Authentic details of the doctors’ are maintained in Cure Health database which lead to users’ trust.
                 Smart practice management software: Doctor can manage their practice details via this website.
                 Facility to find & book doctors: One of the best part is here. Users can find & book doctors according to doctors’ specialties & even according to the areas.
-                Online consultation (via voice and video call): One cannot always meet doctors in need or emergency. With Bdcare’s voice & video call process, one can get the emergency treatment easily from a verified doctor.
+                Online consultation (via voice and video call): One cannot always meet doctors in need or emergency. With Cure Health voice & video call process, one can get the emergency treatment easily from a verified doctor.
                 EMR Storage: All of your medical records will be stored under one secured app. This is Bdcare, where you can store all of your medical documents without any risk. Only doctors who are appointed by you can access to see your records.
                 Emergency online health services: Oxygen, Ambulance, Air-Ambulance, Nursing at home- all these emergency health services are single tap away.
                 Convenient health checkup packages: Medical tests are organized & divided in smart packages which users can choose according to their needs.

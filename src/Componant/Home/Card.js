@@ -20,6 +20,10 @@ const Card = () => {
         history.push("/doctor");
 
     }
+    const handletipsbtn = () => {
+        history.push("/tips");
+
+    }
     return (
 
         <div className="mt-4">
@@ -65,7 +69,7 @@ const Card = () => {
                 <div className="card">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjY6ibtLXQqebvVfrFnnF8KlSrE5Q3Vt85xg&usqp=CAU" className="card-img-top" alt="..." />
                     <div className="card-body">
-                        <button className="btn fw-bold"> Health Tips</button>
+                        <button onClick={handletipsbtn} className="btn fw-bold"> Health Tips</button>
 
                     </div>
                 </div>

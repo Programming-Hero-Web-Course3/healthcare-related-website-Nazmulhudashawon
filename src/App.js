@@ -14,6 +14,9 @@ import HealthCheckup from './Componant/HealthCheckup/HealthCheckup';
 import AuthProvider from './Context/AuthProvider';
 import Aboutus from './Aboutus/Aboutus';
 import Hospital from './Componant/Hospital/Hospital';
+import PrivateRoute from './Componant/PrivateRoute/PrivateRoute';
+import AskDoctor from './Componant/AskDoctor/AskDoctor';
+import HealthTips from './Componant/HealthTips/HealthTips';
 function App() {
   return (
     <div className="App">
@@ -32,9 +35,9 @@ function App() {
             <Route exact path="/aboutus">
               <Aboutus></Aboutus>
             </Route>
-            <Route exact path="/ambulance">
+            <PrivateRoute exact path="/ambulance">
               <Ambulance></Ambulance>
-            </Route>
+            </PrivateRoute>
             <Route exact path="/login">
               <Login></Login>
             </Route>
@@ -44,15 +47,21 @@ function App() {
             <Route exact path="/covid">
               <CovidVaccine></CovidVaccine>
             </Route>
-            <Route exact path="/doctor">
+            <PrivateRoute exact path="/doctor">
               <Doctor></Doctor>
-            </Route>
+            </PrivateRoute>
             <Route exact path="/AppointForm">
               <AppointForm></AppointForm>
             </Route>
             <Route exact path="/healthcheckup">
               <HealthCheckup></HealthCheckup>
             </Route>
+            <PrivateRoute exact path="/ask">
+              <AskDoctor></AskDoctor>
+            </PrivateRoute>
+            <PrivateRoute exact path="/tips">
+              <HealthTips></HealthTips>
+            </PrivateRoute>
             <Route exact path="*">
               <h1 className="error">404 Not Found</h1>
             </Route>

@@ -17,6 +17,7 @@ const Header = () => {
                             <button className="button">{user.displayName}</button>
 
                             <Link className="link" to="/">Home</Link>
+                            <Link className="link" to="/ask">Ask Doctor</Link>
                             <Link className="link" to="/hospital">Hospital</Link>
                             <Link className="link" to="/aboutus">AboutUs</Link>
                             {
