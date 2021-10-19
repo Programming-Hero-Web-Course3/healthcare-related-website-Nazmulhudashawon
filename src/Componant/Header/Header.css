@@ -1,0 +1,26 @@
+.link{
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+    font-size: 18px;
+    text-align:center;
+    padding-right: 2rem;
+
+}
+.header{
+    line-height: 4rem;
+    display: flex;
+    background-color: #03819e;
+    margin:auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1px;
+    
+}
+h4{
+    margin-left: 3rem;
+    color:white;
+}
+.link:hover{
+    color: rgb(209, 85, 122);
+}

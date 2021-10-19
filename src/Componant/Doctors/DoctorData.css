@@ -1,0 +1,9 @@
+.doctorscard{
+    height: 500px;
+    background-color: rgb(199, 192, 176);
+    margin: 1rem;
+    padding: 5px;
+}
+.doctorscard img{
+    height: 250px;
+}

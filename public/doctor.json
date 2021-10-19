@@ -1,0 +1,50 @@
+[
+    {
+        "key": "01",
+        "DoctorName": "Prof. Dr. Pran Gopal Datta",
+        "img": "http://www.arifmemorialhospital.org/Back/images/doctor/dr-demo.png",
+        "Designation": "MBBS, MCPS, ACORL, PhD, MSc (Audiology), FCPS (ENT), FRCS (Glasgow)",
+        "Specialty": "Ear, Nose & Throat Specialist",
+        "VisitingHours": " 8:00 PM – 10:00 PM (Sunday, Tuesday and Thursday)"
+    },
+    {
+        "key": "02",
+        "DoctorName": "Prof. Dr. Mojaffor Alam ",
+        "img": "http://www.arifmemorialhospital.org/Back/images/doctor/dr-demo.png",
+        "Designation": "MBBS, FCPS USA",
+        "Specialty": "Neurology & Medicine Specialist ",
+        "VisitingHours": " 10:00 AM – 10:00 PM (Sunday, Tuesday )"
+    },
+    {
+        "key": "03",
+        "DoctorName": "Prof. Dr. Syed Atiqul Haq",
+        "img": "http://www.arifmemorialhospital.org/Back/images/doctor/dr-demo.png",
+        "Designation": "MBBS, FCPS (Medicine), FRCP, MD (Rheumatology)",
+        "Specialty": " Rheumatology & Medicine Specialist",
+        "VisitingHours": " 10:00 AM – 10:00 PM (Sunday, Tuesday )"
+    },
+    {
+        "key": "04",
+        "DoctorName": "Prof. Dr. Quazi Deen Mohammad",
+        "img": "http://www.arifmemorialhospital.org/Back/images/doctor/dr-demo.png",
+        "Designation": "MBBS, FCPS, Md (Neurology)",
+        "Specialty": " Neurology & Medicine Specialist",
+        "VisitingHours": " 10:00 AM – 10:00 PM (Sunday, Tuesday )"
+    },
+    {
+        "key": "05",
+        "DoctorName": "ASSO. PROF. DR. SHAHANA PERVIN",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcazhTfP1VKf9-v5yWajEIVkx_QKNM8m9kppagE-B_RGia-dbNtCSSzNHufBFVK6vLMw&usqp=CAU",
+        "Designation": "MBBS, DGO, FCPS (OBS & GYNAE)",
+        "Specialty": "Gynecology & Obstetrics",
+        "VisitingHours": " 10:00 AM – 10:00 PM (Sunday, Tuesday )"
+    },
+    {
+        "key": "06",
+        "DoctorName": "Prof. Dr. S. R. Begum",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcazhTfP1VKf9-v5yWajEIVkx_QKNM8m9kppagE-B_RGia-dbNtCSSzNHufBFVK6vLMw&usqp=CAU",
+        "Designation": "MBBS, FCPS (Gyn), F1CS",
+        "Specialty": "Senior Consultant, Obstetrics & Gynecology",
+        "VisitingHours": " 10:00 AM – 10:00 PM (Sunday, Tuesday )"
+    }
+]

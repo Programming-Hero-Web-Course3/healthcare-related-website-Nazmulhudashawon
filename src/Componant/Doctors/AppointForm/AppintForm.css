@@ -1,0 +1,19 @@
+.Form input{
+    padding: 5px 100px;
+    margin: 2px;
+    background-color: rgb(207, 199, 172);
+    border-radius: 5px;
+    text-align: left;
+    text-align: left;
+   
+}
+.Form{
+    background-color: rgba(109, 162, 184, 0.986);
+    padding: 10px;
+    color: rgb(240, 201, 75);
+    height: 500px;
+}
+.Form button{
+    background-color: rgb(197, 196, 183);
+   
+}
