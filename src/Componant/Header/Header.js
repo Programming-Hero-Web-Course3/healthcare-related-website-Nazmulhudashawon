@@ -14,13 +14,23 @@ const Header = () => {
                     <Navbar.Toggle className="navbar-dark" aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse>
                         <Nav className="me-auto">
+                            <button className="button">{user.displayName}</button>
+
                             <Link className="link" to="/">Home</Link>
+                            <Link className="link" to="/hospital">Hospital</Link>
+                            <Link className="link" to="/aboutus">AboutUs</Link>
                             {
                                 user.email ?
                                     <button className=" button" onClick={logout}>logout</button>
                                     :
                                     <Link className="link" to="/login">Login</Link>}
+
+
                             <Link className="link" to="/signup">signup</Link>
+
+
+
+
 
                         </Nav>
                     </Navbar.Collapse>

@@ -12,6 +12,8 @@ import Doctor from './Componant/Doctors/Doctor';
 import AppointForm from './Componant/Doctors/AppointForm/AppointForm';
 import HealthCheckup from './Componant/HealthCheckup/HealthCheckup';
 import AuthProvider from './Context/AuthProvider';
+import Aboutus from './Aboutus/Aboutus';
+import Hospital from './Componant/Hospital/Hospital';
 function App() {
   return (
     <div className="App">
@@ -23,6 +25,12 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home></Home>
+            </Route>
+            <Route exact path="/hospital">
+              <Hospital></Hospital>
+            </Route>
+            <Route exact path="/aboutus">
+              <Aboutus></Aboutus>
             </Route>
             <Route exact path="/ambulance">
               <Ambulance></Ambulance>
