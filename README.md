@@ -3,19 +3,20 @@ https://fir-authentication-7dc57.web.app/
 
 ## Project Name
 
-<h3 align="center">Cure Health website
+<h3 >Cure Health website
 </h3>
 ## Project Description 
-<p align="center" > its about a health care website. </p>
-### `what functionality it has`
-it has lots of functionality 
-1.appoint doctor
-2.emagency service
-3.health checkup
-4.ambulance services
-         
+<p> its about a health care site. </p>       
 ## Built With
-- React
+-Javascript
+- React 
+- css3
 - Bootstap
-- plain css
-- HTML
+- HTML5
+## Features
+-User can login via Google and aslo can create account.
+-user can appoint with doctor via site.
+-user also get emergency services.
+-user can share their disease and get advice from doctor
+- user can get any type of health news tips from the site.
+
