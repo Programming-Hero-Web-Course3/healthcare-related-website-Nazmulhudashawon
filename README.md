@@ -1,10 +1,10 @@
-### `Live site`
+### `Live site link`
 https://fir-authentication-7dc57.web.app/
 
-### `website Name`
+# Project Name
 
-Cure Health website
-
+<h1 align="center">Cure Health website
+</h1>
 its about a health care website.
 ### `what functionality it has`
 it has lots of functionality 
