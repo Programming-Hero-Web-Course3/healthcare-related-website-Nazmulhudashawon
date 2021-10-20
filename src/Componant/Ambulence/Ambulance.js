@@ -7,7 +7,10 @@ const Ambulance = () => {
             <h5>
                 24/7 Customer Support
                 <br />
-                CheckBest Price, Quality Service, Satisfaction Guaranteed
+                CheckBest Price,
+                Quality Service,
+                Satisfaction
+                Guaranteed
                 <br />
                 CheckTrusted, Certified & Skilled Driver
             </h5>
@@ -33,13 +36,12 @@ const Ambulance = () => {
             <h6>
                 5. Certified & Skilled Driver
 
-
             </h6>
             <h6>
                 3. Service available to go anywhere in Bangladesh
 
             </h6>
-            contact :0177755223
+            Call Now : 0177755223
 
         </div>
     );

@@ -66,19 +66,19 @@ const Login = () => {
     return (
         <div className="in-form">
 
-            <div>
-                <h2> Please login</h2>
+            <div className=" formfill">
+                <h2>login</h2>
                 <form onSubmit={handlelogin}>
 
 
-                    <div className="mb-3">
-                        <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                        <input onBlur={handleEmail} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                    <div className="mt-4 ">
+
+                        <input onBlur={handleEmail} type="email" className="form-control" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp" required />
 
                     </div>
-                    <div className="mb-3">
-                        <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-                        <input onBlur={handlePassword} type="password" className="form-control" id="exampleInputPassword1" required />
+                    <div className="mt-1 mb-3">
+
+                        <input onBlur={handlePassword} type="password" className="form-control" placeholder="Password" id="exampleInputPassword1" required />
                     </div>
                     <div className="text-danger">
                         {error}
@@ -88,17 +88,17 @@ const Login = () => {
 
                     </div>
                     <div>
-                        <button type="submit" className="btn btn-primary">login </button>
+                        <button type="submit" className="btn btn-primary px-4">login </button>
                     </div>
 
                 </form>
 
 
                 <p>
-                    not registerd ? <Link to="/signup"> Signup</Link>
+                    Not Have An Account ? <Link to="/signup"> Create Account</Link>
                 </p>
                 <br />
-                <button onClick={handlegooglelogin} className="btn btn-warning">google sign in</button>
+                <button onClick={handlegooglelogin} className="text-dark btn btn-warning">SIGN IN WITH GOOGLE</button>
 
 
 

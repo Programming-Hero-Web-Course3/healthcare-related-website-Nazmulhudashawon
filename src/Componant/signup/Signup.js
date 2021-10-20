@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import fireabaseinitialize from '../Firebase/Firebase.init';
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import useAuth from '../../hooks/useAuth';
 
 
@@ -15,6 +15,9 @@ const Signup = () => {
     const [email, setemail] = useState('');
     const [password, setpassword] = useState('');
     const [error, seterror] = useState('');
+    const location = useLocation();
+    const redirect_uri = location.state?.from || "/";
+
     const auth = getAuth();
 
     const handleName = (e) => {
@@ -43,18 +46,24 @@ const Signup = () => {
         }
         register(email, password)
 
+
     }
 
     const register = (email, password) => {
         console.log(email, password);
         createUserWithEmailAndPassword(auth, email, password).then(result => {
             const user = result.user;
-            setusername()
+            history.push(redirect_uri);
+
             console.log(user)
+            setusername();
+            window.location.reload()
             seterror("")
         }).catch((error) => {
             seterror(error.message)
         });
+
+
     }
     const setusername = () => {
         updateProfile(auth.currentUser, {
@@ -68,35 +77,33 @@ const Signup = () => {
         });
 
     }
-    const handlesignupbtn = () => {
-        user.email && history.push("/")
 
-    }
     return (
         <div className="in-form">
 
-            <div className="mx-4">
-                <h2>Pleace Sign up</h2>
+            <div className=" formfill ">
+                <h2>Sign up</h2>
                 <form onSubmit={handleregister}>
-                    <div className="mb-3">
-                        <label htmlFor="exampleInputName" className="form-label">Name</label>
-                        <input type="name" onBlur={handleName} className="form-control" id="exampleInputEmail1" aria-describedby="nameHelp" required />
+                    <div className="mt-4">
+
+                        <input type="name" onBlur={handleName} className="form-control" placeholder="Full Name" id="exampleInputEmail1" aria-describedby="nameHelp" required />
 
                     </div>
 
-                    <div className="mb-3">
-                        <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                        <input onBlur={handleEmail} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                    <div className="mt-1">
+
+                        <input onBlur={handleEmail} type="email" className="form-control" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp" required />
 
                     </div>
-                    <div className="mb-3">
-                        <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-                        <input onBlur={handlePassword} type="password" className="form-control" id="exampleInputPassword1" required />
+                    <div className="mb-3 mt-1">
+
+                        <input onBlur={handlePassword} type="password" className="form-control" placeholder="Password" id="exampleInputPassword1" required />
                     </div>
                     <div className="text-danger">
                         {error}
                     </div>
-                    <button onClick={handlesignupbtn} type="submit" className="btn btn-primary">Signup</button>
+                    <button
+                        type="submit" className="btn btn-primary mb-2">CREATE ACCOUNT</button>
                 </form>
 
                 <p>

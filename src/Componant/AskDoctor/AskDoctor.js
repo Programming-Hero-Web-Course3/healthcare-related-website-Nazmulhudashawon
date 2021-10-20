@@ -6,7 +6,7 @@ const AskDoctor = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     return (
         <form onSubmit={handleSubmit} className="Form">
-            <h2>Tell us your symptom or health problem</h2>
+            <h2 className="m-4 ">Tell us your symptom or health problem</h2>
 
             <input  {...register("patient Name")} placeholder="patient Name" />
             <br />

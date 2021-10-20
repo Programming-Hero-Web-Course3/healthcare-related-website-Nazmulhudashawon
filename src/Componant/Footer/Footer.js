@@ -6,11 +6,15 @@ import { fab } from '@fortawesome/free-solid-svg-icons'
 
 
 const Footer = () => {
+    // var React = require('react');
+    // var { SocialIcon } = require('react-social-icons');
+
+
     return (
         <div className="footer">
             © CureHealth. All Right reserved
             <div>
-                {/* <FontAwesomeIcon icon={faCoffee} /> */}
+                {/* <SocialIcon url="https://linkedin.com/in/jaketrent" /> */}
 
             </div>
 
