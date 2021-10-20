@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Login.css'
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import { getAuth, GoogleAuthProvider, signInWithEmailAndPassword, } from "firebase/auth";
 import fireabaseinitialize from '../Firebase/Firebase.init';
-import { useState } from 'react/cjs/react.development';
+
 
 fireabaseinitialize();
 const Login = () => {
@@ -19,23 +19,18 @@ const Login = () => {
 
         })
     }
+
     //email password login
 
-    const [name, setname] = useState('');
+
     const [email, setemail] = useState('');
     const [password, setpassword] = useState('');
     const [error, seterror] = useState('');
-    const [login, setlogin] = useState('');
+
     const auth = getAuth();
 
-    const handleName = (e) => {
-        setname(e.target.value);
 
-    }
-    const handlecheckbox = e => {
-        setlogin(e.target.checked);
 
-    }
     const handleEmail = e => {
         setemail(e.target.value);
 
@@ -43,7 +38,7 @@ const Login = () => {
     const handlePassword = e => {
         setpassword(e.target.value);
     }
-    const handleregister = e => {
+    const handlelogin = e => {
         e.preventDefault()
         if (password.length < 6) {
             seterror('password must be 6 character')
@@ -73,7 +68,7 @@ const Login = () => {
 
             <div>
                 <h2> Please login</h2>
-                <form onSubmit={handleregister}>
+                <form onSubmit={handlelogin}>
 
 
                     <div className="mb-3">

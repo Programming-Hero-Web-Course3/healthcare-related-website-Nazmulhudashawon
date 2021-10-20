@@ -24,6 +24,10 @@ const Card = () => {
         history.push("/tips");
 
     }
+    const handleemargencybtn = () => {
+        history.push("/emargency");
+
+    }
     return (
 
         <div className="mt-4">
@@ -32,7 +36,7 @@ const Card = () => {
                 <div className="card">
                     <img src="https://muslimaid.storage.googleapis.com/upload/img_cache/file-2540-c3140610843658e55343c899d6b4d6f5.jpg" className="card-img-top" alt="..." />
                     <div className="card-body">
-                        <button className="btn fw-bold" onClick={handledoctorbtn}> Find a Doctor</button>
+                        <button className="btn fw-bold" onClick={handledoctorbtn}>Appoint a Doctor</button>
 
                     </div>
                 </div>
@@ -55,7 +59,7 @@ const Card = () => {
                 <div className="card">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6McOwklV0mt9G1u0oeCp4vG84drZl6Yxscg&usqp=CAU" className="card-img-top" alt="..." />
                     <div className="card-body">
-                        <button className="btn fw-bold"> Emergency Service</button>
+                        <button onClick={handleemargencybtn} className="btn fw-bold"> Emergency Service</button>
 
                     </div>
                 </div>

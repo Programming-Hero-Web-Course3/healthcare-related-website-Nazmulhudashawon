@@ -19,7 +19,8 @@ const Header = () => {
                             <Link className="link" to="/">Home</Link>
                             <Link className="link" to="/ask">Ask Doctor</Link>
                             <Link className="link" to="/hospital">Hospital</Link>
-                            <Link className="link" to="/aboutus">AboutUs</Link>
+                            <Link className="link" to="/aboutus">About</Link>
+
                             {
                                 user.email ?
                                     <button className=" button" onClick={logout}>logout</button>
@@ -27,11 +28,7 @@ const Header = () => {
                                     <Link className="link" to="/login">Login</Link>}
 
 
-                            <Link className="link" to="/signup">signup</Link>
-
-
-
-
+                            {!user.email && <Link className="link" to="/signup">Create Account</Link>}
 
                         </Nav>
                     </Navbar.Collapse>

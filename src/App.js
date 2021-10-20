@@ -1,6 +1,8 @@
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Switch } from 'react-router';
+
 import './App.css';
+
 import Ambulance from "./Componant/Ambulence/Ambulance";
 import Header from "./Componant/Header/Header";
 import Home from "./Componant/Home/Home";
@@ -12,11 +14,12 @@ import Doctor from './Componant/Doctors/Doctor';
 import AppointForm from './Componant/Doctors/AppointForm/AppointForm';
 import HealthCheckup from './Componant/HealthCheckup/HealthCheckup';
 import AuthProvider from './Context/AuthProvider';
-import Aboutus from './Aboutus/Aboutus';
+import Aboutus from './Componant/Aboutus/Aboutus';
 import Hospital from './Componant/Hospital/Hospital';
 import PrivateRoute from './Componant/PrivateRoute/PrivateRoute';
 import AskDoctor from './Componant/AskDoctor/AskDoctor';
 import HealthTips from './Componant/HealthTips/HealthTips';
+import EmargencyHealth from './Componant/EmargencyHealth/EmargencyHealth';
 function App() {
   return (
     <div className="App">
@@ -55,6 +58,9 @@ function App() {
             </Route>
             <Route exact path="/healthcheckup">
               <HealthCheckup></HealthCheckup>
+            </Route>
+            <Route exact path="/emargency">
+              <EmargencyHealth></EmargencyHealth>
             </Route>
             <PrivateRoute exact path="/ask">
               <AskDoctor></AskDoctor>

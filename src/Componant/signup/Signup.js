@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import fireabaseinitialize from '../Firebase/Firebase.init';
-import { useState } from 'react/cjs/react.development';
+import { useHistory } from "react-router-dom";
+import useAuth from '../../hooks/useAuth';
+
 
 fireabaseinitialize();
 
 const Signup = () => {
+    const { user } = useAuth();
+    const history = useHistory();
     const [name, setname] = useState('');
     const [email, setemail] = useState('');
     const [password, setpassword] = useState('');
@@ -64,6 +68,10 @@ const Signup = () => {
         });
 
     }
+    const handlesignupbtn = () => {
+        user.email && history.push("/")
+
+    }
     return (
         <div className="in-form">
 
@@ -88,7 +96,7 @@ const Signup = () => {
                     <div className="text-danger">
                         {error}
                     </div>
-                    <button type="submit" className="btn btn-primary">Signup</button>
+                    <button onClick={handlesignupbtn} type="submit" className="btn btn-primary">Signup</button>
                 </form>
 
                 <p>
