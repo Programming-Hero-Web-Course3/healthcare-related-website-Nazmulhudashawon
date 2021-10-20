@@ -20,6 +20,7 @@ import PrivateRoute from './Componant/PrivateRoute/PrivateRoute';
 import AskDoctor from './Componant/AskDoctor/AskDoctor';
 import HealthTips from './Componant/HealthTips/HealthTips';
 import EmargencyHealth from './Componant/EmargencyHealth/EmargencyHealth';
+import NotFound from './Componant/Page Not Found/NotFound';
 function App() {
   return (
     <div className="App">
@@ -69,7 +70,7 @@ function App() {
               <HealthTips></HealthTips>
             </PrivateRoute>
             <Route exact path="*">
-              <h1 className="error">404 Not Found</h1>
+              <NotFound></NotFound>
             </Route>
           </Switch>
         </BrowserRouter>
